@@ -169,7 +169,7 @@
                 </div>
             </div>
         <!--DISPLAY BEST MATCH-->
-            <div id = "modalmatch" class = "modal">
+            <!--<div id = "modalmatch" class = "modal">
                 <div class = "modal-header">
                     <h4>Best Match !</h4>
                     <h5 id = "userMatch"></h5>
@@ -178,8 +178,28 @@
                 <div class = "modal-footer">
                     <a href="/survey" class = "btn-light">Take survey again!</a>
                 </div>
-            </div>    
+            </div>-->    
 
+            <div class="modal" id = "modalmatch" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Best Match!</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                                <h4>Best Match !</h4>
+                                <h5 id = "userMatch"></h5>
+                                <img id = "userMatchImg" width = "350"> 
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
             <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="" crossorigin="anonymous"></script>
