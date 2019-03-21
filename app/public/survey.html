@@ -11,32 +11,36 @@
 <body>
         <div class = 'container'>
                 <div class = 'jumbotron'>
-                    <h1>Friend Finder</h1>
-                    <ul>
-                    <li><a href = '/'>Home</a></li>
-                    <li><a href='/survey'>Survey</a></li>
-                    <li><a href="/api/friends">API Friends List</a></li>
-                    </ul>
-                </div>
-            </div>
+                    <h1 class = "display-4">Friend <small class = "text-muted">Finder</small></h1>
+                    <div class = "btn-group" role = "group" aria-label="button-group">
+                    <a href = '/' class = "btn btn-secondary">Home</a>
+                    <a href='/survey' class = "btn btn-secondary">Survey</a>
+                    <a href="/api/friends" class = "btn btn-secondary">API Friends List</a>
+                    </div>
+                            
 
         <div class = 'container'>
             <div class = 'row'>
                 <div>
-                    <h1>Survey ?'s</h1>
-                  
-                  
-                <h4>Name</h4>
+                    <h1 class = "display-4">Survey ?'s</h1>
+        
+                </div>
+            </div>
+        </div>
+        
+        <div class = 'container'> 
+                <div class = "card bg-secondary text-light">         
+                <h5>Name</h5>
                     <input type="text" class="validate" placeholder="Your Name Here" id="userName">
-
+                </div>
                 
-                <div>
-                    <h4>Link to photo</h4>
+                <div class = "card bg-secondary text-light">
+                    <h5>Link to photo</h5>
                     <input type="text" class="validate" placeholder="Your Photo Link Here" id="userPhoto">
 
                 </div>
 <!--questions-->
-                <div class= 'card'>
+                <div class= 'card bg-secondary text-light'>
                 <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
                 <select id="question1">
                         <option value="" disabled selected>Choose your option</option>
@@ -47,6 +51,7 @@
                         <option value="5">5 (Strongly Agree)</option>
                 </select>  
                 </div>
+                <div class = "card bg-secondary text-light">
                 <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
                 <select id="question2">
                     <option value="" disabled selected>Choose your option</option>
@@ -56,7 +61,8 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
-                <div class= 'card'>
+                </div>
+                <div class= 'card bg-secondary text-light'>
                         <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
                         <select id="question3">
                             <option value="" disabled selected>Choose your option</option>
@@ -68,7 +74,7 @@
                         </select>
                 </div>
 
-                <div class= 'card'>
+                <div class= 'card bg-secondary text-light'>
                         <h5>You rarely do something just out of sheer curiosity.</h5>
                         <select id="question4">
                             <option value="" disabled selected>Choose your option</option>
@@ -80,7 +86,7 @@
                         </select>
                 </div>
 
-                <div class= 'card'>
+                <div class= 'card bg-secondary text-light'>
                         <h5>People can rarely upset you.</h5>
                         <select id="question5">
                             <option value="" disabled selected>Choose your option</option>
@@ -92,7 +98,7 @@
                         </select>
                 </div>
 
-                <div class= 'card'>
+                <div class= 'card bg-secondary text-light'>
                         <h5>It is often difficult for you to relate to other people’s feelings.</h5>
                         <select id="question6">
                             <option value="" disabled selected>Choose your option</option>
@@ -104,7 +110,7 @@
                         </select>  
                 </div>
 
-                <div class= 'card'>
+                <div class= 'card bg-secondary text-light'>
                         <h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
                         <select id="question7">
                             <option value="" disabled selected>Choose your option</option>
@@ -116,7 +122,7 @@
                         </select>
                 </div>
 
-                <div class= 'card'>
+                <div class= 'card bg-secondary text-light'>
                         <h5>You rarely get carried away by fantasies and ideas.</h5>
                         <select id="question8">
                             <option value="" disabled selected>Choose your option</option>
@@ -128,7 +134,7 @@
                         </select> 
                 </div>
 
-                <div class= 'card'>
+                <div class= 'card bg-secondary text-light'>
                         <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
                         <select id="question9">
                             <option value="" disabled selected>Choose your option</option>
@@ -140,7 +146,7 @@
                         </select>   
                 </div>
 
-                <div class= 'card'>
+                <div class= 'card bg-secondary text-light'>
                         <h5>You feel more energetic after spending time with a group of people.</h5>
                         <select id="question10">
                             <option value="" disabled selected>Choose your option</option>
@@ -153,22 +159,15 @@
                 </div>
 
                 <div>
-                    <button class = "btn btn-light" data-toggle = "modal" data-target="#modalmatch" type = "submit" name = "action" id ="submitButton">Complete Survey</button>
+                    <button class = "btn btn-secondary" data-toggle = "modal" data-target="#modalmatch" type = "submit" name = "action" id ="submitButton">Complete Survey</button>
                 </div>
             </div>
         </div>
     </div>  
+</div>
+</div>
 
-        <div class = 'container'>
-                <div class = 'row'>
-                    <div>
-                       <h4>LINKS</h4>
-                       <ul>
-                           <li><a href = '/api/friends'>FriendsList API</a></li>
-                       </ul>
-                    </div>
-                </div>
-            </div>
+       
         <!--DISPLAY BEST MATCH-->
             <!--<div id = "modalmatch" class = "modal">
                 <div class = "modal-header">

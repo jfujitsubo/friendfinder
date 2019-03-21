@@ -3,7 +3,7 @@
     <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Page Title</title>
+            <title>FriendFinder App</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>FriendFinder App</title>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity =""></script>    
@@ -13,41 +13,33 @@
     <body>
         <div class = 'container'>
             <div class = 'jumbotron'>
-                <h1>Friend Finder</h1>
-                <ul>
-                <li><a href = '/'>Home</a></li>
-                <li><a href='/survey'>Survey</a></li>
-                <li><a href="/api/friends">API Friends List</a></li>
-                </ul>
+                <h1 class = "display-4">Friend <small class = "text-muted">Finder</small></small></h1>
+                <div class = "btn-group" role = "group" aria-label="button-group">
+                <a href = '/' class = "btn btn-secondary">Home</a>
+                <a href='/survey' class = "btn btn-secondary">Survey</a>
+                <a href="/api/friends" class = "btn btn-secondary">API Friends List</a>
+                </div>
+                
             </div>
         </div>
 
         <div class='container'>
             <div class= 'row'>
-                <h1>Friend Finder</h1></div>
+                <h1 class = "display-4">Friend Finder</h1></div>
                 <div>
                     <div class ="row">
-                    <h2>Answer these questions and find a compatible friend!</h2>
+                    <h4>Answer these questions and find a compatible friend!</h4>
                     </div>
                     <div class = "row">
                     <a href= '/survey'>
-                        <button class = "btn btn-light" type ="submit" name = "action">Move to Survey</button>
+                        <button class = "btn btn-secondary" type ="submit" name = "action">Move to Survey</button>
                     </a>
                 </div>
                 </div>
             </div>
         </div>
 
-        <div class = 'container'>
-            <div class = 'row'>
-                <div>
-                   <h4>LINKS</h4>
-                   <ul>
-                       <li><a href = '/api/friends'>FriendsList API</a></li>
-                   </ul>
-                </div>
-            </div>
-        </div>
+        
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="" crossorigin="anonymous"></script>
